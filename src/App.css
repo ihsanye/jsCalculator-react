@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    display: grid;
+    grid-template-areas:
+        "display display display display"
+        "clear negative percentage divide"
+        "seven eight nine multiply"
+        "four five six substract"
+        "one two three add"
+        "zero zero decimal equals";
+    grid-template-columns: 100px 100px 100px 100px;
+    gap: 20px;
+    padding: 10px 50px 50px 50px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+button {
+    height: 100px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100%;
+    transition: transform 0.1s ease-in-out;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.answer {
+    text-align: right;
+    height: 48px;
+    font-size: 48px;
+
+}
+
+.expression {
+    text-align: right;
+    height: 32px;
+    font-size: 32px;
+}
+
+.display {
+    grid-area: display;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#clear {
+    grid-area: clear;
+    background-color: lightgray;
+}
+
+#negative {
+    grid-area: negative;
+    background-color: lightgray;
+}
+
+#percentage {
+    grid-area: percentage;
+    background-color: lightgray;
+}
+
+#multiply {
+    grid-area: multiply;
+    background-color: darkorange;
+}
+
+#divide {
+    grid-area: divide;
+    background-color: darkorange;
+}
+
+#substract {
+    grid-area: substract;
+    background-color: darkorange;
+}
+
+#add {
+    grid-area: add;
+    background-color: darkorange;
+}
+
+#decimal {
+    grid-area: decimal;
+    background-color: slategray;
+}
+
+#equals {
+    grid-area: equals;
+    background-color: darkorange;
+}
+
+#one {
+    grid-area: one;
+    background-color: slategray;
+}
+
+#two {
+    grid-area: two;
+    background-color: slategray;
+}
+
+#three {
+    grid-area: three;
+    background-color: slategray;
+}
+
+#four {
+    grid-area: four;
+    background-color: slategray;
+}
+
+#five {
+    grid-area: five;
+    background-color: slategray;
+}
+
+#six {
+    grid-area: six;
+    background-color: slategray;
+}
+
+#seven {
+    grid-area: seven;
+    background-color: slategray;
+}
+
+#eight {
+    grid-area: eight;
+    background-color: slategray;
+}
+
+#nine {
+    grid-area: nine;
+    background-color: slategray;
+}
+
+#zero {
+    grid-area: zero;
+    background-color: slategray;
+}
